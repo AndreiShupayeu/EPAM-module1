@@ -9,11 +9,21 @@ public class Task1 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите целое положительное число");
         int a = scanner.nextInt();
-        int sum = 0;
-        for (int i = 0; i < a; i++) {
-            sum += i;
+        if (a < 0) {
+            System.out.println("Вы ввели отрицательное число, а нужно положительное!");
 
+        } else {
+            int sum = 0;
+            for (int i = 0; i < a; i++) {
+                sum += i;
+
+            }
+            System.out.println("Сумма чисел от единицы до введенного: " + sum);
         }
-        System.out.println("Сумма чисел от единицы до введенного: " + sum);
     }
 }
+
+
+
+
+
