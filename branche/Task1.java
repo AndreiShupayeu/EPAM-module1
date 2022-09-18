@@ -1,6 +1,7 @@
 package by.epam.module1.branche;
 //Даны два угла треугольника (в градусах). Определить, существует ли такой треугольник, и если да, то будет ли
 //он прямоугольным.
+
 import java.util.Scanner;
 
 public class Task1 {
@@ -28,7 +29,8 @@ public class Task1 {
     }
 
     private static boolean isTriangleExist(double x, double y) {
-        return x + y < 180;
+
+        return x + y < 180 && x > 0 && y > 0;
     }
 
     private static boolean isRightTriangle(double x, double y) {
